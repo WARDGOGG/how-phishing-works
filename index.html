@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول (للأغراض التعليمية)</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #202124;
+            direction: rtl;
+            text-align: right;
+        }
+        .container {
+            width: 360px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        img {
+            width: 75px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="email"], input[type="password"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #155ab6;
+        }
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="شعار جوجل">
+        <h1>تسجيل الدخول</h1>
+        <form action="mock-result.html" method="GET">
+            <input type="email" name="email" placeholder="البريد الإلكتروني أو رقم الهاتف" required>
+            <input type="password" name="password" placeholder="أدخل كلمة المرور" required>
+            <input type="submit" value="التالي">
+        </form>
+        <div class="disclaimer">
+            <p><strong>إخلاء المسؤولية:</strong> هذه صفحة تصيّد وهمية لأغراض تعليمية فقط. لا يتم جمع أي بيانات أو تخزينها. تأكد دائمًا من المواقع الشرعية قبل إدخال بياناتك.</p>
+        </div>
+    </div>
+    <footer>© 2024 مشروع تعليمي</footer>
+</body>
+</html>

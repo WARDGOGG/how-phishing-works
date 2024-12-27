@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض بيانات التصيّد</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #202124;
+            direction: rtl;
+            text-align: right;
+        }
+        .container {
+            width: 600px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d9534f;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .data {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>عرض بيانات التصيّد</h1>
+        <p>البيانات التي قمت بإدخالها قد "تم التقاطها" من قبل المهاجم. فيما يلي مثال على كيفية ظهور معلوماتك الحساسة إذا تم سرقتها:</p>
+        <div class="data">
+            <p><strong>البريد الإلكتروني:</strong> <script>document.write(new URLSearchParams(window.location.search).get('email'));</script></p>
+            <p><strong>كلمة المرور:</strong> <script>document.write(new URLSearchParams(window.location.search).get('password'));</script></p>
+        </div>
+        <p>هذا مجرد عرض توضيحي لكيفية عمل التصيّد. لم يتم تخزين أي بيانات أو إرسالها إلى أي مكان.</p>
+        <div class="disclaimer">
+            <p><strong>إخلاء المسؤولية:</strong> هذه الصفحة الوهمية للتوعية والتعليم فقط. لا تستخدم هذه المعرفة لأي أغراض خبيثة.</p>
+        </div>
+    </div>
+</body>
+</html>
